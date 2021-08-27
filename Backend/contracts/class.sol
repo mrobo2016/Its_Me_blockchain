@@ -21,8 +21,6 @@ contract Class {
         bool Active;
     }
 
-    // event - 컨트랙트에서 함수가 실행되는 중간에 이벤트를 발생시켜서, 어떤 변수가 현재 어떤 값인지 로그를 남겨, DApp에서 로그 추적 가능.
-    // emit으로 event를 기록 할 수 있음  
     event RequestReceipt(
         uint32 indexed _id,
         address indexed _from,
@@ -31,7 +29,6 @@ contract Class {
         uint32 _price
     );
 
-    // Global
     address payable owner; // 변수 선언, contstructor에서 initialize 됨 + payable
     string className;
 
@@ -41,10 +38,6 @@ contract Class {
     uint32 numRequests;
     mapping (uint32 => Request) requests; // mapping 
 
-
-    // When a contract is created, its constructor 
-    // (a function declared with the constructor keyword) is executed once.
-    // A constructor is optional. Only one constructor is allowed, which means overloading is not supported.
     constructor(string memory name, address payable addr) public { // memory keyword -> 동적 할당으로 name을 받는다 
         owner = addr; // payable owner 
         className = name;
@@ -56,9 +49,6 @@ contract Class {
 
 
     // public - Public functions are part of the contract interface 
-    // and can be either called internally or via messages. For public state variables, an automatic getter function (see below) is generated.
-    // view - Functions can be declared view in which case they promise not to modify the state.
-    // return 값 -> uint32 dtype
     function getNumAttendances() public view returns (uint32) {
         return numAttendances;
     }
