@@ -29,7 +29,7 @@ contract Class {
         uint32 _price
     );
 
-    address payable owner; // 변수 선언, contstructor에서 initialize 됨 + payable
+    address payable owner;
     string className;
 
     uint32 numAttendances;
@@ -38,7 +38,7 @@ contract Class {
     uint32 numRequests;
     mapping (uint32 => Request) requests; // mapping 
 
-    constructor(string memory name, address payable addr) public { // memory keyword -> 동적 할당으로 name을 받는다 
+    constructor(string memory name, address payable addr) public { 
         owner = addr; // payable owner 
         className = name;
 
