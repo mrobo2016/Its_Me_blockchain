@@ -1,0 +1,13 @@
+store owner address : 0x9A709B39195C5794A99fF3383996923Bc73B7d0d
+kas account address : 0xcF84180be67b198c5283e9eE9aD7E600F1219003
+
+--
+MASTER KAS ACCOUNT 
+    - WALLET KEY from https://baobab.wallet.klaytn.com/create
+    - FAUCET 에서 KLAY 충전해 두어야 함ㅣ. 
+        private - 0x567a93e06ba2c923c03ccc946bf7f44b9c60e701f8ccc7bc8a6962fc2bc3a85e
+        Klaytn Wallet KEy -0x567a93e06ba2c923c03ccc946bf7f44b9c60e701f8ccc7bc8a6962fc2bc3a85e0x000x34c1915af6a63636d15023258a4f0cf5ad580599
+
+config.json의 master contract
+https://ide.klaytn.com/ 를 통해 Contract를 미리 배포한다. 
+master_contract_list address:  0x664ff407c6370adec53f944190fffe05027fab8c
